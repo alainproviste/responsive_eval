@@ -1,0 +1,117 @@
+.footer-main {
+    background: $red
+}
+
+.footer-wrapper {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    @media screen and (max-width: $break-large){
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+        text-align: center;
+    }
+}
+
+.footer-logo {
+    width: 230px;
+    img{
+        width: 140px;
+        @media screen and (max-width: $break-large){
+            width: 200px;
+        }
+    }
+    @media screen and (max-width: $break-large){
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+
+.footer-col {
+    .title-footer {
+        color: white;
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        @media screen and (max-width: $break-large){
+            font-size: 30px;
+        }
+    }
+    ul{
+        li{
+            margin-bottom: 10px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            @media screen and (max-width: $break-large){
+                font-size: 16px;
+            }
+        }
+    }
+    .btn{
+        background: $red;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        border: 1px solid white;
+        padding: 10px 30px;
+        box-shadow: 4px 4px 0px white;
+        transition: 0.3s all;
+        &:hover{
+            background: $blue;
+            box-shadow: 7px 7px 0px white;
+            transition: 0.3s all
+        }
+    }
+    &.nws-col{
+        margin: 20px 0;
+    }
+}
+
+.footer-social--links {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.footer-bottom {
+    border-top: 4px double $grey;
+    padding: 25px 0px;
+    margin: 0 45px;
+    .footer-bottom--wrapper{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+    p{
+        text-transform: uppercase;
+        font-size: 12px;
+        color: white;
+        letter-spacing: 0.5px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+    }
+    a{
+        text-transform: uppercase;
+        font-size: 12px;
+        color: white;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+}
